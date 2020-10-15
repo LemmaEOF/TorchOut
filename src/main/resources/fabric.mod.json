@@ -1,28 +1,30 @@
 {
   "schemaVersion": 1,
-  "id": "starter",
+  "id": "torchout",
   "version": "${version}",
 
-  "name": "Fabric Starter",
-  "icon": "assets/starter/icon.png",
-  "description": "Template for starting out Fabric mods",
+  "name": "TorchOut",
+  "icon": "assets/torchout/textures/block/unlit_torch.png",
+  "description": "Torches and soul torches burn out after a time and must be re-lit.",
   "license": "MIT",
   "contact": {
-    "sources": "https://github.com/CottonMC/FabricStarter"
+    "sources": "https://github.com/Boundarybreaker/TorchOut"
   },
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.cottonmc.starter.FabricStarter"
+      "space.bbkr.torchout.TorchOut"
+    ],
+    "client": [
+      "space.bbkr.torchout.TorchOutClient"
     ]
   },
   "mixins": [
-    "mixins.starter.json"
+    "mixins.torchout.json"
   ],
   "depends": {
     "fabricloader": ">=0.4.0"
   },
   "custom": {
-    "modmenu:api": true
   }
 }
